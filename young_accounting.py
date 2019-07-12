@@ -6,18 +6,18 @@ melon_cost = 1.00
 def find_underpaid_cust():
     """compare sales to payment to provide list of underpaid customers"""
 
-  for line in the_file:
-    line = line.rstrip()
-    words = line.split("|")
+    for line in the_file:
+        line = line.rstrip()
+        words = line.split("|")
 
-    customer = words[1]
-    quantity = words[2]
-    amt_paid = words[3]
+        customer = words[1]
+        quantity = words[2]
+        amt_paid = words[3]
 
-    customer_expected = float(quantity) * melon_cost
+        customer_expected = float(quantity) * melon_cost
 
-    if customer_expected != float(amt_paid):
-        print("{} paid ${}, expected ${}".format(customer, amt_paid,customer_expected))
+        if customer_expected != float(amt_paid):
+            print("{} paid ${}, expected ${}".format(customer, amt_paid,customer_expected))
 
 
 
