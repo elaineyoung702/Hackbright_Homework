@@ -1,5 +1,7 @@
 the_file = open("customer-orders.txt")
 
+melon_cost = 1.00
+
 def find_underpaid_cust():
 
   for line in the_file:
@@ -10,8 +12,14 @@ def find_underpaid_cust():
     quantity = words[2]
     amt_paid = words[3]
 
+    customer_expected = float(quantity) * melon_cost
+
+    if customer_expected != float(amt_paid):
+        print("{} paid ${}, expected ${}".format(customer, amt_paid,customer_expected))
 
 
+
+find_underpaid_cust()
 
 
 # melon_cost = 1.00
