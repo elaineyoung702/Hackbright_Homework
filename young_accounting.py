@@ -2,7 +2,9 @@ the_file = open("customer-orders.txt")
 
 melon_cost = 1.00
 
+
 def find_underpaid_cust():
+    """compare sales to payment to provide list of underpaid customers"""
 
   for line in the_file:
     line = line.rstrip()
