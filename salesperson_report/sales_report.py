@@ -43,3 +43,6 @@ class Sales:
     self.name = name.capitalize()
     self.money = money_made
     self.amount = amount_sold
+
+
+    """
